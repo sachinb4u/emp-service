@@ -5,6 +5,7 @@ package com.example.service.controller;
 
 import java.util.Collection;
 
+import javax.annotation.security.PermitAll;
 import javax.ejb.Stateless;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +27,7 @@ import com.example.service.domain.Employee;
 @Stateless
 @Controller
 @RequestMapping("/employees")
-public final class EmployeeServiceController implements EmployeeService {
+public class EmployeeServiceController implements EmployeeService {
 
 	@Autowired
 	private EmployeeDao employeeDao;
