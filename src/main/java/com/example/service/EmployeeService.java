@@ -19,7 +19,7 @@ public interface EmployeeService {
 	
 	Employee getEmployee(int id);
 	Collection<Employee> listEmployee();
-	String addEmployee(int id, Employee emp);
+	String addEmployee(Employee emp);
 	Employee deleteEmployee(int id);
 
 }

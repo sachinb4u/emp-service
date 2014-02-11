@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.example.dao;
+package com.example.service.dao;
 
 import java.util.Collection;
 import java.util.Map;
@@ -37,7 +37,6 @@ public class EmployeeDao {
 		empMap.put(22, emp2);
 	}
 	
-	
 	public Collection<Employee> listEmployees(){
 		return  empMap.values();
 	}
@@ -48,6 +47,10 @@ public class EmployeeDao {
 	
 	public void addEmployee(Employee emp){
 		 empMap.put(emp.getId(), emp);
+	}
+	
+	public Employee removeEmployee(int id){
+		 return  empMap.remove(id) ;
 	}
 	
 }
