@@ -75,13 +75,15 @@
 			<version>8.0.0.CR1</version>
 			<scope>test</scope>
 		</dependency> -->
-  <dependency>
-    <groupId>org.jboss.as</groupId>
-    <artifactId>jboss-as-ejb-client-bom</artifactId>
-    <version>7.1.1.Final</version>
-    <type>pom</type>
-  </dependency>
-
+		
+		<!--  for ejb client in testcase -->
+		<dependency>
+			<groupId>org.jboss.as</groupId>
+			<artifactId>jboss-as-ejb-client-bom</artifactId>
+			<version>7.1.1.Final</version>
+			<type>pom</type>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
