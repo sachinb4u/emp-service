@@ -33,7 +33,7 @@ public class EmployeeServiceController implements EmployeeService {
 	@Autowired
 	private EmployeeDao employeeDao;
 	
-	@RequestMapping(value="/{id}")
+	@RequestMapping(value="/{id}", method=RequestMethod.GET)
 	@ResponseBody
 	public  Employee getEmployee(@PathVariable int id) {
 		return employeeDao.getEmployee(id);
